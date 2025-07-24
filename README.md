@@ -4,10 +4,11 @@ A C# Windows Forms application integrated with PostgreSQL that allows users to b
 
 ## 📸 Screenshots
 
-<img src="images/appointment-1.png" width="400" />
-<img src="images/appointment-2.png" width="400" />
-<img src="images/appointment-3.png" width="400" />
-<img src="images/appointment-4.png" width="400" />
+<img src="appointment-1.png" width="600">
+<img src="appointment-2.png" width="600">
+<img src="appointment-3.png" width="600">
+<img src="appointment-4.png" width="600">
+
 
 ## ✅ Features
 
