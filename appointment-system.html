@@ -15,7 +15,7 @@
     header {
       background-color: #007acc;
       color: white;
-      padding: 1.5rem;
+      padding: 2rem;
       text-align: center;
     }
 
@@ -25,26 +25,7 @@
       padding: 2rem;
     }
 
-    .back-button {
-      display: inline-block;
-      margin-bottom: 1.5rem;
-      background-color: #007acc;
-      color: white;
-      text-decoration: none;
-      padding: 0.5rem 1rem;
-      border-radius: 4px;
-      font-weight: bold;
-    }
-
-    .back-button:hover {
-      background-color: #005f99;
-    }
-
-    .card {
-      background-color: white;
-      padding: 1.5rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    section {
       margin-bottom: 2rem;
     }
 
@@ -52,11 +33,26 @@
       color: #007acc;
     }
 
+    .button {
+      display: inline-block;
+      background-color: #007acc;
+      color: white;
+      padding: 10px 18px;
+      margin-top: 15px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .button:hover {
+      background-color: #005eaa;
+    }
+
     .screenshots {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 1rem;
-      margin-top: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
     }
 
     .screenshots img {
@@ -64,66 +60,33 @@
       border-radius: 6px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
-
-    .button {
-      display: inline-block;
-      margin-top: 1.5rem;
-      padding: 0.6rem 1.2rem;
-      background-color: #007acc;
-      color: white;
-      text-decoration: none;
-      border-radius: 4px;
-      font-weight: bold;
-    }
-
-    .button:hover {
-      background-color: #005f99;
-    }
-
-    footer {
-      text-align: center;
-      padding: 1.5rem;
-      background-color: #e0e0e0;
-      font-size: 0.9rem;
-    }
-
-    footer a {
-      color: #007acc;
-      text-decoration: none;
-    }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Appointment Booking System</h1>
+    <h1>📅 Appointment Booking System</h1>
+    <p>C# Windows Forms + PostgreSQL</p>
   </header>
 
   <div class="container">
-    <a href="index.html" class="back-button">← Back to Portfolio</a>
 
-    <div class="card">
-      <h2>📘 Project Overview</h2>
-      <p>This is a desktop-based C# Windows Forms application that allows users to schedule and view medical appointments. Built using Visual Studio and connected to a PostgreSQL database using Npgsql, the app supports real-time form validation, time and date selection, and displays booked appointments in a dynamic DataGridView.</p>
-      <p><strong>Tech Stack:</strong> C#, .NET, Windows Forms, PostgreSQL, Npgsql</p>
+    <section class="description">
+      <h2>Overview</h2>
+      <p>This desktop application allows users to schedule and manage medical appointments. Built with C# and Windows Forms, it features PostgreSQL integration via Npgsql, real-time appointment listing, and input validation. Users can view scheduled appointments in a DataGridView and save new ones securely into a hosted PostgreSQL database.</p>
+      <p><strong>Tech Stack:</strong> C#, .NET, Windows Forms, PostgreSQL, Npgsql, Visual Studio</p>
       <a class="button" href="https://github.com/MTariq2023/MTariq2023.github.io/blob/main/appointment-system.html" target="_blank">View Project on GitHub</a>
+      <a class="button" href="index.html">← Back to Portfolio</a>
+    </section>
 
+    <section class="screenshots">
+      <img src="images/appointment-form.png" alt="Form UI">
+      <img src="images/appointment-success.png" alt="Saved Confirmation">
+      <img src="images/appointment-table.png" alt="PostgreSQL Table">
+      <img src="images/appointment-view.png" alt="View Appointments Screen">
+    </section>
 
-    </div>
-
-    <h2>📸 Screenshots</h2>
-    <div class="screenshots">
-      <img src="images/appointment-1.png" alt="Appointment Form UI">
-      <img src="images/appointment-2.png" alt="Appointment Form with Time">
-      <img src="images/appointment-3.png" alt="Success Dialog Box">
-      <img src="images/appointment-4.png" alt="Database Table View">
-    </div>
   </div>
-
-  <footer>
-    &copy; 2025 Mohammed Tariq · <a href="mailto:mohammed1645tariq@gmail.com">Email Me</a> · <a href="https://github.com/MohammedTariq" target="_blank">GitHub</a>
-  </footer>
 
 </body>
 </html>
-
