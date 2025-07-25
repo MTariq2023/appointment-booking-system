@@ -15,7 +15,7 @@
     header {
       background-color: #007acc;
       color: white;
-      padding: 2rem;
+      padding: 1.5rem;
       text-align: center;
     }
 
@@ -25,64 +25,71 @@
       padding: 2rem;
     }
 
-    section {
-      margin-bottom: 3rem;
+    .back-button {
+      display: inline-block;
+      margin-bottom: 1.5rem;
+      background-color: #007acc;
+      color: white;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      font-weight: bold;
     }
 
-    h1, h2 {
-      color: #007acc;
+    .back-button:hover {
+      background-color: #005f99;
     }
 
-    .project-description {
-      background: white;
+    .card {
+      background-color: white;
       padding: 1.5rem;
       border-radius: 8px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
       margin-bottom: 2rem;
     }
 
-    .project-description p {
-      margin-top: 1rem;
-      line-height: 1.6;
+    h1, h2 {
+      color: #007acc;
     }
 
     .screenshots {
-      margin-top: 2rem;
-    }
-
-    .screenshot-gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 1rem;
       margin-top: 1rem;
     }
 
-    .screenshot-gallery img {
+    .screenshots img {
       width: 100%;
-      border: 1px solid #ccc;
       border-radius: 6px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
 
-    a.button {
+    .button {
       display: inline-block;
-      padding: 0.7rem 1.5rem;
+      margin-top: 1.5rem;
+      padding: 0.6rem 1.2rem;
       background-color: #007acc;
       color: white;
-      border-radius: 6px;
       text-decoration: none;
-      margin-top: 1rem;
+      border-radius: 4px;
+      font-weight: bold;
     }
 
-    a.button:hover {
-      background-color: #005fa3;
+    .button:hover {
+      background-color: #005f99;
     }
 
     footer {
       text-align: center;
-      padding: 1rem;
+      padding: 1.5rem;
       background-color: #e0e0e0;
-      margin-top: 3rem;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #007acc;
+      text-decoration: none;
     }
   </style>
 </head>
@@ -90,30 +97,25 @@
 
   <header>
     <h1>Appointment Booking System</h1>
-    <p>A C# Windows Forms application to manage patient appointments using PostgreSQL</p>
   </header>
 
   <div class="container">
+    <a href="index.html" class="back-button">← Back to Portfolio</a>
 
-    <section class="project-description">
-      <h2>Overview</h2>
-      <p>
-        This application allows users to book, view, and manage appointments through a simple Windows Forms interface. 
-        Built using C# and PostgreSQL, it includes features such as conflict checking, input validation, and a data grid for easy viewing of scheduled appointments.
-      </p>
-      <a class="button" href="https://github.com/MohammedTariq/appointment-system" target="_blank">View on GitHub</a>
-    </section>
+    <div class="card">
+      <h2>📘 Project Overview</h2>
+      <p>This is a desktop-based C# Windows Forms application that allows users to schedule and view medical appointments. Built using Visual Studio and connected to a PostgreSQL database using Npgsql, the app supports real-time form validation, time and date selection, and displays booked appointments in a dynamic DataGridView.</p>
+      <p><strong>Tech Stack:</strong> C#, .NET, Windows Forms, PostgreSQL, Npgsql</p>
+      <a class="button" href="https://github.com/MTariq2023/AppointmentSystem" target="_blank">View Project on GitHub</a>
+    </div>
 
-    <section class="screenshots">
-      <h2>Screenshots</h2>
-      <div class="screenshot-gallery">
-        <img src="images/appointment-1.png" alt="Appointment Form - Blank" />
-        <img src="images/appointment-2.png" alt="Appointment Form - Confirmation" />
-        <img src="images/appointment-3.png" alt="Appointment Saved Popup" />
-        <img src="images/appointment-4.png" alt="View Appointments Data Grid" />
-      </div>
-    </section>
-
+    <h2>📸 Screenshots</h2>
+    <div class="screenshots">
+      <img src="images/appointment-1.png" alt="Appointment Form UI">
+      <img src="images/appointment-2.png" alt="Appointment Form with Time">
+      <img src="images/appointment-3.png" alt="Success Dialog Box">
+      <img src="images/appointment-4.png" alt="Database Table View">
+    </div>
   </div>
 
   <footer>
@@ -122,3 +124,4 @@
 
 </body>
 </html>
+
