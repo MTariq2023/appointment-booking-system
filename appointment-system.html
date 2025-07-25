@@ -25,40 +25,53 @@
       padding: 2rem;
     }
 
-    section {
+    h1, h2 {
+      color: #007acc;
+    }
+
+    .project {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
       margin-bottom: 2rem;
     }
 
-    h1, h2 {
-      color: #007acc;
+    .project p {
+      margin-bottom: 1rem;
     }
 
     .button {
       display: inline-block;
       background-color: #007acc;
       color: white;
-      padding: 10px 18px;
-      margin-top: 15px;
-      border-radius: 5px;
+      padding: 10px 20px;
       text-decoration: none;
-      font-weight: bold;
+      border-radius: 5px;
+      margin: 10px 10px 0 0;
     }
 
     .button:hover {
-      background-color: #005eaa;
+      background-color: #005f99;
     }
 
-    .screenshots {
+    .image-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 15px;
       margin-top: 20px;
     }
 
-    .screenshots img {
+    .image-grid img {
       width: 100%;
       border-radius: 6px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #e0e0e0;
     }
   </style>
 </head>
@@ -66,27 +79,28 @@
 
   <header>
     <h1>📅 Appointment Booking System</h1>
-    <p>C# Windows Forms + PostgreSQL</p>
   </header>
 
   <div class="container">
-
-    <section class="description">
-      <h2>Overview</h2>
-      <p>This desktop application allows users to schedule and manage medical appointments. Built with C# and Windows Forms, it features PostgreSQL integration via Npgsql, real-time appointment listing, and input validation. Users can view scheduled appointments in a DataGridView and save new ones securely into a hosted PostgreSQL database.</p>
+    <div class="project">
+      <p>This C# Windows Forms application allows users to schedule and view medical appointments, with PostgreSQL database integration using Npgsql. Features include real-time form validation, confirmation dialogs, and a DataGridView for listing appointments.</p>
       <p><strong>Tech Stack:</strong> C#, .NET, Windows Forms, PostgreSQL, Npgsql, Visual Studio</p>
-      <a class="button" href="https://github.com/MTariq2023/MTariq2023.github.io/blob/main/appointment-system.html" target="_blank">View Project on GitHub</a>
+
+      <a class="button" href="https://github.com/MTariq2023/appointment-booking-system" target="_blank">View Project on GitHub</a>
       <a class="button" href="index.html">← Back to Portfolio</a>
-    </section>
 
-    <section class="screenshots">
-      <img src="images/appointment-form.png" alt="Form UI">
-      <img src="images/appointment-success.png" alt="Saved Confirmation">
-      <img src="images/appointment-table.png" alt="PostgreSQL Table">
-      <img src="images/appointment-view.png" alt="View Appointments Screen">
-    </section>
-
+      <div class="image-grid">
+        <img src="images/appointment-form.png" alt="Appointment Form">
+        <img src="images/appointment-success.png" alt="Appointment Success">
+        <img src="images/appointment-table.png" alt="Database Table">
+        <img src="images/view-appointments.png" alt="View Appointments">
+      </div>
+    </div>
   </div>
+
+  <footer>
+    &copy; 2025 Mohammed Tariq · <a href="mailto:mohammed1645tariq@gmail.com">Email Me</a> · <a href="https://github.com/MohammedTariq" target="_blank">GitHub</a>
+  </footer>
 
 </body>
 </html>
