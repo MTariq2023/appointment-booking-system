@@ -12,83 +12,84 @@
       color: #333;
     }
 
-    .container {
-      max-width: 960px;
-      margin: 2rem auto;
-      padding: 1rem;
+    header {
+      background-color: #007acc;
+      color: white;
+      padding: 2rem;
+      text-align: center;
     }
 
-    h2 {
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    h1, h2 {
       color: #007acc;
     }
 
-    .card {
-      background: white;
-      padding: 1.5rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      margin-bottom: 2rem;
-    }
-
     .btn {
+      display: inline-block;
+      margin: 1rem 0;
+      padding: 10px 20px;
       background-color: #007acc;
       color: white;
-      padding: 0.7rem 1.2rem;
-      border: none;
-      border-radius: 5px;
       text-decoration: none;
+      border-radius: 5px;
       font-weight: bold;
-      display: inline-block;
-      margin-top: 1rem;
     }
 
     .btn:hover {
-      background-color: #005fa3;
+      background-color: #005f99;
     }
 
     .screenshots {
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 1rem;
-      justify-content: center;
+      margin-top: 1.5rem;
     }
 
     .screenshots img {
-      width: 300px;
+      width: 100%;
       border-radius: 6px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
 
     footer {
       text-align: center;
-      margin-top: 3rem;
       padding: 1rem;
       background-color: #e0e0e0;
+      margin-top: 2rem;
     }
   </style>
 </head>
 <body>
 
-  <div class="container">
-    <div class="card">
-      <h2>Project Overview</h2>
-      <p>This is a desktop-based C# Windows Forms application that allows users to schedule and view medical appointments. Built using Visual Studio and connected to a PostgreSQL database using Npgsql, the app supports real-time form validation, time and date selection, and displays booked appointments in a dynamic DataGridView.</p>
-      <p><strong>Tech Stack:</strong> C#, .NET, Windows Forms, PostgreSQL, Npgsql</p>
-      <a href="https://github.com/MTariq2023/appointment-booking-system" target="_blank" class="btn">View Project on GitHub</a>
-      <a href="index.html" class="btn" style="margin-left: 1rem;">← Back</a>
-    </div>
+  <header>
+    <h1>📅 Appointment Booking System</h1>
+    <p>C# Windows Forms application for scheduling medical appointments</p>
+  </header>
 
-    <h2>📷 Screenshots</h2>
+  <div class="container">
+    <p>This desktop-based application allows users to book appointments with a medical provider. It features a clean UI built with Windows Forms, connects to a PostgreSQL database using Npgsql, and supports input validation, confirmation messages, and a DataGridView for viewing saved appointments.</p>
+
+    <p><strong>Tech Stack:</strong> C#, .NET, Windows Forms, PostgreSQL, Npgsql, Visual Studio</p>
+
+    <a href="https://github.com/MTariq2023/appointment-booking-system" target="_blank" class="btn">View Project on GitHub</a>
+    <a href="index.html" class="btn">← Back to Portfolio</a>
+
     <div class="screenshots">
-      <img src="images/appointment-1.png" alt="Appointment Form UI">
-      <img src="images/appointment-2.png" alt="Appointment Confirmation">
-      <img src="images/appointment-3.png" alt="Appointment Error Handling">
-      <img src="images/appointment-4.png" alt="PostgreSQL Table UI">
+      <img src="images/appointment-form.png" alt="Appointment Form Screenshot">
+      <img src="images/appointment-success.png" alt="Success Message Screenshot">
+      <img src="images/appointment-table.png" alt="View Appointments Screenshot">
+      <img src="images/appointment-sql.png" alt="PostgreSQL Table Screenshot">
     </div>
   </div>
 
   <footer>
-    &copy; 2025 Mohammed Tariq · <a href="mailto:mohammed1645tariq@gmail.com">Email Me</a> · <a href="https://github.com/MTariq2023" target="_blank">GitHub</a>
+    &copy; 2025 Mohammed Tariq · <a href="mailto:mohammed1645tariq@gmail.com">Email Me</a>
   </footer>
 
 </body>
