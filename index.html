@@ -5,89 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mohammed Tariq | Developer Portfolio</title>
   <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f4f6f9;
-      color: #333;
-    }
-
-    header {
-      background-color: #007acc;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
-
-    .container {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 2rem;
-    }
-
-    section {
-      margin-bottom: 3rem;
-    }
-
-    h1, h2 {
-      color: #007acc;
-    }
-
-    .skills ul {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      list-style: none;
-      padding: 0;
-    }
-
-    .skills li {
-      background: white;
-      margin: 8px;
-      padding: 10px 15px;
-      border-radius: 5px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      font-weight: bold;
-      text-align: center;
-    }
-
-    .project {
-      background: white;
-      padding: 1.5rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      margin-bottom: 1.5rem;
-    }
-
-    .project a {
-      color: #007acc;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .project a:hover {
-      text-decoration: underline;
-    }
-
-    .project-link {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 10px 20px;
-      background-color: #007acc;
-      color: white;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .project-link:hover {
-      background-color: #005f99;
-    }
-
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: #e0e0e0;
-    }
+    body { margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f6f9; color: #333; }
+    header { background-color: #007acc; color: white; padding: 2rem; text-align: center; }
+    .container { max-width: 960px; margin: 0 auto; padding: 2rem; }
+    section { margin-bottom: 3rem; }
+    h1, h2 { color: #007acc; }
+    .skills ul { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); list-style: none; padding: 0; }
+    .skills li { background: white; margin: 8px; padding: 10px 15px; border-radius: 5px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); font-weight: bold; text-align: center; }
+    .project { background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); margin-bottom: 1.5rem; }
+    .project a { color: #007acc; text-decoration: none; font-weight: bold; }
+    .project a:hover { text-decoration: underline; }
+    .project-link { display: inline-block; margin-top: 1rem; padding: 10px 20px; background-color: #007acc; color: white; border-radius: 5px; text-decoration: none; font-weight: bold; }
+    .project-link:hover { background-color: #005f99; }
+    .small-link { display: inline-block; margin-left: 12px; font-weight: normal; }
+    footer { text-align: center; padding: 1rem; background-color: #e0e0e0; }
   </style>
 </head>
 <body>
@@ -128,42 +59,40 @@
     <section class="projects">
       <h2>Projects</h2>
 
+      <!-- API ETL Integration (Postgres) -->
+      <div class="project">
+        <h3>🔗 API ETL Integration (Postgres)</h3>
+        <p>Python ETL that integrates <strong>REST/JSON (OpenWeather)</strong> and <strong>SOAP/XML (CountryInfo WSDL)</strong>, transforms with pandas, and loads into <strong>AWS RDS PostgreSQL</strong> via SQLAlchemy (SSL). Includes reporting view <code>vw_weather_country</code> and setup/results screenshots.</p>
+        <a class="project-link" href="https://mtariq2023.github.io/api-etl-integration-postgres/" target="_blank">View Project Page →</a>
+        <a class="small-link" href="https://github.com/MTariq2023/api-etl-integration-postgres" target="_blank">GitHub Repo</a>
+      </div>
+
+      <!-- Appointment Booking System -->
       <div class="project">
         <h3>📅 Appointment Booking System</h3>
         <p>A C# Windows Forms application integrated with PostgreSQL that allows users to book, view, and manage appointments. Features include conflict checking, input validation, and a live data grid.</p>
         <a href="appointment-system.html" class="project-link">View Project →</a>
       </div>
 
+      <!-- Retail Sales Forecasting & Inflation Trends -->
       <div class="project">
-        <h3>📊 Retail Sales Forecasting Pipeline</h3>
-        <p>Python-based ETL pipeline using Pandas + Scikit-learn with forecasting models (ARIMA, XGBoost), PostgreSQL integration, and Power BI dashboard for retail analytics.</p>
-        <a href="https://github.com/MohammedTariq/retail-sales-forecast" target="_blank">View on GitHub →</a>
+        <h3>📈 Retail Sales Forecasting &amp; Inflation Trends (U.S.)</h3>
+        <p>Nominal vs inflation-adjusted retail sales (Census + CPI) with a Tableau dashboard. Data cleaned and merged in Python (Pandas), CPI-indexed, and exported for BI.</p>
+        <a href="retail-sales.html" class="project-link">View Project →</a>
+        <a class="small-link" href="https://public.tableau.com/app/profile/mohammed.tariq2342/viz/RetailSalesForecastingInflationTrendsU_S_/NominalvsReal" target="_blank">Tableau Dashboard</a>
       </div>
 
-      <div class="project">
-        <h3>💼 Smart ERP Dashboard</h3>
-        <p>Enterprise system built with C# and .NET Core featuring role-based login, inventory and HR modules, and integrated Power BI reports for management insights.</p>
-        <a href="https://github.com/MohammedTariq/erp-dashboard" target="_blank">View on GitHub →</a>
-      </div>
-
-      <div class="project">
-        <h3>📉 Customer Churn Prediction</h3>
-        <p>Interactive Streamlit dashboard that predicts churn risk using classification models and SHAP for explainability. Includes filters for customer segment and behavior.</p>
-        <a href="https://github.com/MohammedTariq/churn-dashboard" target="_blank">View on GitHub →</a>
-      </div>
-
-      <div class="project">
-        <h3>💻 Personal Budget Tracker</h3>
-        <p>Flask app with PostgreSQL backend that allows users to track income, expenses, and savings goals. Includes category-based analytics and Chart.js visualizations.</p>
-        <a href="https://github.com/MohammedTariq/budget-tracker" target="_blank">View on GitHub →</a>
-      </div>
     </section>
 
   </div>
 
   <footer>
-    &copy; 2025 Mohammed Tariq · <a href="mailto:mohammed1645tariq@gmail.com">Email Me</a> · <a href="https://github.com/MohammedTariq" target="_blank">GitHub</a>
+    &copy; 2025 Mohammed Tariq · <a href="mailto:mohammed1645tariq@gmail.com">Email Me</a> ·
+    <a href="https://github.com/MTariq2023" target="_blank">GitHub</a>
   </footer>
 
 </body>
 </html>
+
+</html>
+
